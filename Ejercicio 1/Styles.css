@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+body{
+    font-family: 'Montserrat';
+    color:rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 15px; 
+}
+  
+.cards {
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: rgba(117, 117, 117, 0.727);
+  border-width: 0.5rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.green{
+    background-color:rgba(25, 67, 34, 0.76);
+}
+
+.red{
+    background-color:rgba(71, 22, 22, 0.76);
+}
+
+.blue{
+    background-color:rgba(16, 56, 73, 0.76);
+}
+
+.gray{
+  background-color:rgba(36, 28, 27, 0.76);
+}
+
+.brown{
+  background-color:rgba(73, 36, 31, 0.76);
+}
+
+.cardTitle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.description{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 0.5rem;
+}
+
+.description::after{
+    content: "Learn more!";
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.cardImage{
+    display: flex;
+    justify-content: center;
+    padding-inline: 1rem;
+}
+
+.cardImage img{
+    width: 100%;
+    max-width: 10rem;
+}
+
+.cardButton{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgba(225, 225, 225, 0.627);
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.cards:hover button{
+    visibility: visible;
+}
+
+.cardTitle::before{
+    margin-top: 1rem;
+    display: inline-block;
+    content: "";
+    height: 7rem;
+    width: 7rem;
+    background: url(./pokeball.svg) no-repeat 0 0;
+    background-size: 7rem 7rem;
+}
+
+.cards:hover{
+    box-shadow: 0 0 3rem -1rem rgb(154, 154, 154);
+}
